@@ -1,0 +1,61 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "itunnel_mux", "itunnel_mux\itunnel_mux.vcxproj", "{1761D269-E1EC-4C4C-B1EB-E403078751EF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559} = {35E664FD-7189-4AE6-888D-1AEBD36B5559}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "libMobiledevice", "libMobiledevice\libMobiledevice.vcxproj", "{35E664FD-7189-4AE6-888D-1AEBD36B5559}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "itunnel_csharp", "itunnel_csharp\itunnel_csharp.csproj", "{017346EC-E271-4FC5-A510-5D2AA41C48DA}"
+EndProject
+Global
+	GlobalSection(SubversionScc) = preSolution
+		Svn-Managed = True
+		Manager = AnkhSVN - Subversion Support for Visual Studio
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Mixed Platforms = Debug|Mixed Platforms
+		Debug|Win32 = Debug|Win32
+		Debug|x86 = Debug|x86
+		Release|Mixed Platforms = Release|Mixed Platforms
+		Release|Win32 = Release|Win32
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Debug|Win32.Build.0 = Debug|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Debug|x86.ActiveCfg = Debug|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Release|Win32.ActiveCfg = Release|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Release|Win32.Build.0 = Release|Win32
+		{1761D269-E1EC-4C4C-B1EB-E403078751EF}.Release|x86.ActiveCfg = Release|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Debug|Mixed Platforms.ActiveCfg = Debug|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Debug|Mixed Platforms.Build.0 = Debug|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Debug|Win32.ActiveCfg = Debug|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Debug|Win32.Build.0 = Debug|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Debug|x86.ActiveCfg = Debug|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Release|Mixed Platforms.ActiveCfg = Release|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Release|Mixed Platforms.Build.0 = Release|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Release|Win32.ActiveCfg = Release|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Release|Win32.Build.0 = Release|Win32
+		{35E664FD-7189-4AE6-888D-1AEBD36B5559}.Release|x86.ActiveCfg = Release|Win32
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Debug|Win32.ActiveCfg = Debug|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Debug|x86.ActiveCfg = Debug|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Debug|x86.Build.0 = Debug|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Release|Mixed Platforms.Build.0 = Release|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Release|Win32.ActiveCfg = Release|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Release|x86.ActiveCfg = Release|x86
+		{017346EC-E271-4FC5-A510-5D2AA41C48DA}.Release|x86.Build.0 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

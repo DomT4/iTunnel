@@ -1,0 +1,299 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D55172E127065CB00BFEB91 /* error.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D551722127065CB00BFEB91 /* error.cpp */; };
+		9D55172F127065CB00BFEB91 /* error.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D551725127065CB00BFEB91 /* error.h */; };
+		9D551730127065CB00BFEB91 /* libMobiledevice.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D551726127065CB00BFEB91 /* libMobiledevice.h */; };
+		9D551731127065CB00BFEB91 /* platform.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D551727127065CB00BFEB91 /* platform.h */; };
+		9D551732127065CB00BFEB91 /* itunes_private_api.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D551728127065CB00BFEB91 /* itunes_private_api.cpp */; };
+		9D551733127065CB00BFEB91 /* itunes_private_api.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D551729127065CB00BFEB91 /* itunes_private_api.h */; };
+		9D551735127065CB00BFEB91 /* itunes_private.h in Headers */ = {isa = PBXBuildFile; fileRef = 9D55172B127065CB00BFEB91 /* itunes_private.h */; };
+		9D551736127065CB00BFEB91 /* libMobiledevice.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D55172C127065CB00BFEB91 /* libMobiledevice.cpp */; };
+		9D551737127065CB00BFEB91 /* platform.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9D55172D127065CB00BFEB91 /* platform.cpp */; };
+		9D551761127067D200BFEB91 /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D551760127067D200BFEB91 /* CoreFoundation.framework */; };
+		9D55183112709AB500BFEB91 /* MobileDevice in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D55183012709AB500BFEB91 /* MobileDevice */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		9D551722127065CB00BFEB91 /* error.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = error.cpp; path = ../win32_project/libMobiledevice/error.cpp; sourceTree = SOURCE_ROOT; };
+		9D551725127065CB00BFEB91 /* error.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = error.h; path = ../win32_project/libMobiledevice/include/libmd/error.h; sourceTree = SOURCE_ROOT; };
+		9D551726127065CB00BFEB91 /* libMobiledevice.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = libMobiledevice.h; path = ../win32_project/libMobiledevice/include/libmd/libMobiledevice.h; sourceTree = SOURCE_ROOT; };
+		9D551727127065CB00BFEB91 /* platform.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = platform.h; path = ../win32_project/libMobiledevice/include/libmd/platform.h; sourceTree = SOURCE_ROOT; };
+		9D551728127065CB00BFEB91 /* itunes_private_api.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = itunes_private_api.cpp; path = ../win32_project/libMobiledevice/itunes_private_api.cpp; sourceTree = SOURCE_ROOT; };
+		9D551729127065CB00BFEB91 /* itunes_private_api.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = itunes_private_api.h; path = ../win32_project/libMobiledevice/itunes_private_api.h; sourceTree = SOURCE_ROOT; };
+		9D55172A127065CB00BFEB91 /* itunes_private.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = itunes_private.cpp; path = ../win32_project/libMobiledevice/itunes_private.cpp; sourceTree = SOURCE_ROOT; };
+		9D55172B127065CB00BFEB91 /* itunes_private.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = itunes_private.h; path = ../win32_project/libMobiledevice/itunes_private.h; sourceTree = SOURCE_ROOT; };
+		9D55172C127065CB00BFEB91 /* libMobiledevice.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = libMobiledevice.cpp; path = ../win32_project/libMobiledevice/libMobiledevice.cpp; sourceTree = SOURCE_ROOT; };
+		9D55172D127065CB00BFEB91 /* platform.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = platform.cpp; path = ../win32_project/libMobiledevice/platform.cpp; sourceTree = SOURCE_ROOT; };
+		9D551760127067D200BFEB91 /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9D55183012709AB500BFEB91 /* MobileDevice */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = MobileDevice; sourceTree = "<group>"; };
+		D2AAC0630554660B00DB518D /* libdylib.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libdylib.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D289988505E68E00004EDB86 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D551761127067D200BFEB91 /* CoreFoundation.framework in Frameworks */,
+				9D55183112709AB500BFEB91 /* MobileDevice in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* dylib */ = {
+			isa = PBXGroup;
+			children = (
+				9D551738127065D200BFEB91 /* Headers */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				9D551809127094C100BFEB91 /* Frameworks */,
+			);
+			name = dylib;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9D551722127065CB00BFEB91 /* error.cpp */,
+				9D551728127065CB00BFEB91 /* itunes_private_api.cpp */,
+				9D55172A127065CB00BFEB91 /* itunes_private.cpp */,
+				9D55172C127065CB00BFEB91 /* libMobiledevice.cpp */,
+				9D55172D127065CB00BFEB91 /* platform.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D2AAC0630554660B00DB518D /* libdylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D551723127065CB00BFEB91 /* include */ = {
+			isa = PBXGroup;
+			children = (
+				9D551724127065CB00BFEB91 /* libmd */,
+			);
+			name = include;
+			path = ../win32_project/libMobiledevice/include;
+			sourceTree = SOURCE_ROOT;
+		};
+		9D551724127065CB00BFEB91 /* libmd */ = {
+			isa = PBXGroup;
+			children = (
+				9D551725127065CB00BFEB91 /* error.h */,
+				9D551726127065CB00BFEB91 /* libMobiledevice.h */,
+				9D551727127065CB00BFEB91 /* platform.h */,
+			);
+			name = libmd;
+			path = ../win32_project/libMobiledevice/include/libmd;
+			sourceTree = SOURCE_ROOT;
+		};
+		9D551738127065D200BFEB91 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				9D551729127065CB00BFEB91 /* itunes_private_api.h */,
+				9D55172B127065CB00BFEB91 /* itunes_private.h */,
+				9D551723127065CB00BFEB91 /* include */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
+		9D551809127094C100BFEB91 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				9D55183012709AB500BFEB91 /* MobileDevice */,
+				9D551760127067D200BFEB91 /* CoreFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		D2AAC0600554660B00DB518D /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D55172F127065CB00BFEB91 /* error.h in Headers */,
+				9D551730127065CB00BFEB91 /* libMobiledevice.h in Headers */,
+				9D551731127065CB00BFEB91 /* platform.h in Headers */,
+				9D551733127065CB00BFEB91 /* itunes_private_api.h in Headers */,
+				9D551735127065CB00BFEB91 /* itunes_private.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		D2AAC0620554660B00DB518D /* dylib */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "dylib" */;
+			buildPhases = (
+				D2AAC0600554660B00DB518D /* Headers */,
+				D2AAC0610554660B00DB518D /* Sources */,
+				D289988505E68E00004EDB86 /* Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = dylib;
+			productName = dylib;
+			productReference = D2AAC0630554660B00DB518D /* libdylib.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "dylib" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* dylib */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D2AAC0620554660B00DB518D /* dylib */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D2AAC0610554660B00DB518D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D55172E127065CB00BFEB91 /* error.cpp in Sources */,
+				9D551732127065CB00BFEB91 /* itunes_private_api.cpp in Sources */,
+				9D551736127065CB00BFEB91 /* libMobiledevice.cpp in Sources */,
+				9D551737127065CB00BFEB91 /* platform.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB914B08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/MobileDevice.framework\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/MobileDevice.framework/Versions/A\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = dylib;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		1DEB914C08733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				EXECUTABLE_PREFIX = lib;
+				GCC_MODEL_TUNING = G5;
+				INSTALL_PATH = /usr/local/lib;
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/MobileDevice.framework\"",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks/MobileDevice.framework/Versions/A\"",
+					"\"$(SRCROOT)\"",
+				);
+				PRODUCT_NAME = dylib;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		1DEB914F08733D8E0010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../win32_project/libMobiledevice/include;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/libmd.dylib";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Debug;
+		};
+		1DEB915008733D8E0010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_VERSION = "";
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = ../win32_project/libMobiledevice/include;
+				LD_DYLIB_INSTALL_NAME = "@executable_path/libmd.dylib";
+				MACH_O_TYPE = mh_dylib;
+				ONLY_ACTIVE_ARCH = NO;
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				SDKROOT = macosx10.6;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB914A08733D8E0010E9CD /* Build configuration list for PBXNativeTarget "dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914B08733D8E0010E9CD /* Debug */,
+				1DEB914C08733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB914E08733D8E0010E9CD /* Build configuration list for PBXProject "dylib" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB914F08733D8E0010E9CD /* Debug */,
+				1DEB915008733D8E0010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

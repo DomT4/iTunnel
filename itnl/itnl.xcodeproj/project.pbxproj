@@ -1,0 +1,298 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 45;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		52CD373D0E83FA8D00B37BFD /* CoreFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 52CD373C0E83FA8D00B37BFD /* CoreFoundation.framework */; };
+		9D27E00D10CB38D700C334CE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D27E00C10CB38D700C334CE /* Foundation.framework */; };
+		9D83E29B1270A76A007DAFBB /* libdylib.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 9D55184312709B9900BFEB91 /* libdylib.dylib */; };
+		9DAEE65D11A07926001A11CF /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DAEE65C11A07926001A11CF /* main.cpp */; };
+		9DECAF6B124E5335003CB055 /* log.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DECAF68124E5335003CB055 /* log.cpp */; };
+		9DECAF6C124E5335003CB055 /* options.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DECAF69124E5335003CB055 /* options.cpp */; };
+		9DECAF6D124E5335003CB055 /* recovery.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 9DECAF6A124E5335003CB055 /* recovery.cpp */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9D55184212709B9900BFEB91 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D55183C12709B9900BFEB91 /* dylib.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = D2AAC0630554660B00DB518D;
+			remoteInfo = dylib;
+		};
+		9D83E2A61270A795007DAFBB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9D55183C12709B9900BFEB91 /* dylib.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = D2AAC0620554660B00DB518D;
+			remoteInfo = dylib;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		8DD76FAF0486AB0100D96B5E /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 8;
+			dstPath = /usr/share/man/man1/;
+			dstSubfolderSpec = 0;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 1;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		52CD373C0E83FA8D00B37BFD /* CoreFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreFoundation.framework; path = System/Library/Frameworks/CoreFoundation.framework; sourceTree = SDKROOT; };
+		9D27E00C10CB38D700C334CE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		9D55183C12709B9900BFEB91 /* dylib.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = dylib.xcodeproj; path = dylib/dylib.xcodeproj; sourceTree = SOURCE_ROOT; };
+		9DAEE65C11A07926001A11CF /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = main.cpp; path = win32_project/itunnel_mux/main.cpp; sourceTree = SOURCE_ROOT; };
+		9DDB93F311A011E600DAC890 /* itnl */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = itnl; sourceTree = BUILT_PRODUCTS_DIR; };
+		9DECAF68124E5335003CB055 /* log.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = log.cpp; path = win32_project/itunnel_mux/log.cpp; sourceTree = SOURCE_ROOT; };
+		9DECAF69124E5335003CB055 /* options.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = options.cpp; path = win32_project/itunnel_mux/options.cpp; sourceTree = SOURCE_ROOT; };
+		9DECAF6A124E5335003CB055 /* recovery.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = recovery.cpp; path = win32_project/itunnel_mux/recovery.cpp; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8DD76FAD0486AB0100D96B5E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				52CD373D0E83FA8D00B37BFD /* CoreFoundation.framework in Frameworks */,
+				9D27E00D10CB38D700C334CE /* Foundation.framework in Frameworks */,
+				9D83E29B1270A76A007DAFBB /* libdylib.dylib in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		08FB7794FE84155DC02AAC07 /* itnl */ = {
+			isa = PBXGroup;
+			children = (
+				9D55183C12709B9900BFEB91 /* dylib.xcodeproj */,
+				08FB7795FE84155DC02AAC07 /* Source */,
+				1AB674ADFE9D54B511CA2CBB /* Products */,
+				9D27E00C10CB38D700C334CE /* Foundation.framework */,
+				52CD373C0E83FA8D00B37BFD /* CoreFoundation.framework */,
+			);
+			name = itnl;
+			sourceTree = "<group>";
+		};
+		08FB7795FE84155DC02AAC07 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				9DECAF68124E5335003CB055 /* log.cpp */,
+				9DECAF69124E5335003CB055 /* options.cpp */,
+				9DECAF6A124E5335003CB055 /* recovery.cpp */,
+				9DAEE65C11A07926001A11CF /* main.cpp */,
+			);
+			name = Source;
+			sourceTree = "<group>";
+		};
+		1AB674ADFE9D54B511CA2CBB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9DDB93F311A011E600DAC890 /* itnl */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9D55183F12709B9900BFEB91 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9D55184312709B9900BFEB91 /* libdylib.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8DD76FA90486AB0100D96B5E /* itnl */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "itnl" */;
+			buildPhases = (
+				8DD76FAB0486AB0100D96B5E /* Sources */,
+				8DD76FAD0486AB0100D96B5E /* Frameworks */,
+				8DD76FAF0486AB0100D96B5E /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9D83E2A71270A795007DAFBB /* PBXTargetDependency */,
+			);
+			name = itnl;
+			productInstallPath = "$(HOME)/bin";
+			productName = itnl;
+			productReference = 9DDB93F311A011E600DAC890 /* itnl */;
+			productType = "com.apple.product-type.tool";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08FB7793FE84155DC02AAC07 /* Project object */ = {
+			isa = PBXProject;
+			buildConfigurationList = 1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "itnl" */;
+			compatibilityVersion = "Xcode 3.1";
+			developmentRegion = English;
+			hasScannedForEncodings = 1;
+			knownRegions = (
+				English,
+				Japanese,
+				French,
+				German,
+			);
+			mainGroup = 08FB7794FE84155DC02AAC07 /* itnl */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 9D55183F12709B9900BFEB91 /* Products */;
+					ProjectRef = 9D55183C12709B9900BFEB91 /* dylib.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				8DD76FA90486AB0100D96B5E /* itnl */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		9D55184312709B9900BFEB91 /* libdylib.dylib */ = {
+			isa = PBXReferenceProxy;
+			fileType = "compiled.mach-o.dylib";
+			path = libdylib.dylib;
+			remoteRef = 9D55184212709B9900BFEB91 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8DD76FAB0486AB0100D96B5E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9DAEE65D11A07926001A11CF /* main.cpp in Sources */,
+				9DECAF6B124E5335003CB055 /* log.cpp in Sources */,
+				9DECAF6C124E5335003CB055 /* options.cpp in Sources */,
+				9DECAF6D124E5335003CB055 /* recovery.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9D83E2A71270A795007DAFBB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = dylib;
+			targetProxy = 9D83E2A61270A795007DAFBB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		1DEB928608733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = itnl;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+			};
+			name = Debug;
+		};
+		1DEB928708733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks\"",
+				);
+				GCC_MODEL_TUNING = G4;
+				INSTALL_PATH = /usr/local/bin;
+				LIBRARY_SEARCH_PATHS = "$(inherited)";
+				PRODUCT_NAME = itnl;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+			};
+			name = Release;
+		};
+		1DEB928A08733DD80010E9CD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = win32_project/libMobiledevice/include;
+				MACH_O_TYPE = mh_execute;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+			};
+			name = Debug;
+		};
+		1DEB928B08733DD80010E9CD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+				GCC_C_LANGUAGE_STANDARD = "compiler-default";
+				GCC_FAST_OBJC_DISPATCH = YES;
+				GCC_GENERATE_DEBUGGING_SYMBOLS = YES;
+				GCC_OPTIMIZATION_LEVEL = s;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = win32_project/libMobiledevice/include;
+				MACH_O_TYPE = mh_execute;
+				MACOSX_DEPLOYMENT_TARGET = 10.4;
+				ONLY_ACTIVE_ARCH = NO;
+				PREBINDING = NO;
+				SDKROOT = macosx;
+				SEPARATE_SYMBOL_EDIT = NO;
+				VALID_ARCHS = "$(ARCHS_STANDARD_32_64_BIT)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1DEB928508733DD80010E9CD /* Build configuration list for PBXNativeTarget "itnl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928608733DD80010E9CD /* Debug */,
+				1DEB928708733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1DEB928908733DD80010E9CD /* Build configuration list for PBXProject "itnl" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1DEB928A08733DD80010E9CD /* Debug */,
+				1DEB928B08733DD80010E9CD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08FB7793FE84155DC02AAC07 /* Project object */;
+}

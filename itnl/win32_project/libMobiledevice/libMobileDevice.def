@@ -1,0 +1,14 @@
+LIBRARY libMobileDevice
+EXPORTS
+
+libmd_platform_init
+libmd_builtin_uploadFile
+libmd_builtin_sendCommand
+libmd_builtin_uploadFileDfu
+libmd_builtin_uploadUsbExploit
+call_AMRecoveryModeDeviceSendFileToDevice
+libmd_private_api_located
+g_logFunction
+libmd_set_recovery_callback
+libmd_start_mux_tunnel
+libmd_set_autoboot

@@ -1,0 +1,234 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="Source Files\hfs">
+      <UniqueIdentifier>{418e0769-764b-49b0-bfac-eb66b78d8ac1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\dmg">
+      <UniqueIdentifier>{b7a7db65-3cdd-474f-905a-3b466f26894f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hdutil">
+      <UniqueIdentifier>{bb544836-7fed-448b-8eb3-557ba8f19761}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\hfs">
+      <UniqueIdentifier>{e831b7ec-ecfb-4623-936b-ba55366e5b88}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Header Files\xpwn">
+      <UniqueIdentifier>{0025fab6-b384-4ef9-8d19-9dd3bee1a9f7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\hfsdll">
+      <UniqueIdentifier>{349b3183-55df-4437-b372-9a7f46e6ce6a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xpwntool">
+      <UniqueIdentifier>{b6c3fba6-2234-4f6d-9174-f175e8aef250}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Source Files\xpwntool\dll">
+      <UniqueIdentifier>{c2c228b1-4db9-4299-8a37-43d69f4fafbe}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="hfs\fastunicodecompare.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\flatfile.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\hfs.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\hfscompress.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\hfslib.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\rawfile.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\utility.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\volume.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\xattr.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\btree.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\catalog.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="hfs\extents.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\resources.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\udif.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\checksum.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\dmg.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\dmgfile.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\dmglib.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\filevault.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\io.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="dmg\partition.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="common\abstractfile.c">
+      <Filter>Source Files\hfs</Filter>
+    </ClCompile>
+    <ClCompile Include="common\base64.c">
+      <Filter>Source Files\dmg</Filter>
+    </ClCompile>
+    <ClCompile Include="hdutil\hdutil.c">
+      <Filter>Source Files\hdutil</Filter>
+    </ClCompile>
+    <ClCompile Include="hfsdll.c">
+      <Filter>Source Files\hfsdll</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\xpwntool.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\nor_files.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\img3.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\img2.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\ibootim.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\lzssfile.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\lzss.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\8900.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwntool\libxpwn.c">
+      <Filter>Source Files\xpwntool</Filter>
+    </ClCompile>
+    <ClCompile Include="xpwndll.c">
+      <Filter>Source Files\xpwntool\dll</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="hfsdll.h">
+      <Filter>Header Files\hfs</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\8900.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\zlib.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\abstractfile.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\common.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\dirent.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\dmg\dmg.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\dmg\dmgfile.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\dmg\dmglib.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\dmg\filevault.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\partial\firmwaremaster.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\hfs\hfscompress.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\hfs\hfslib.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\hfs\hfsplus.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\ibootim.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\img2.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\img3.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\libxpwn.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\lzss.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\lzssfile.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\nor_files.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\outputstate.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\partial\partial.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\plist.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\xpwn\pwnutil.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="includes\zconf.h">
+      <Filter>Header Files\xpwn</Filter>
+    </ClInclude>
+    <ClInclude Include="xpwndll.h">
+      <Filter>Source Files\xpwntool\dll</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,23 @@
+﻿<Window x:Class="RamdiskBuilder.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="MainWindow" Height="411" Width="523" AllowDrop="True">
+    <Grid Name="grid1">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="359*" />
+            <RowDefinition Height="13*" />
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="13*" />
+            <ColumnDefinition Width="476*" />
+            <ColumnDefinition Width="12*" />
+        </Grid.ColumnDefinitions>
+        <TextBox Grid.Column="1" Height="23" Margin="35,30,0,0" Name="ivString" VerticalAlignment="Top" Text="fd19726dc6b555b6bb4dbbcd91d1e7c0"/>
+        <Label Content="IV" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="0,28,0,0" Name="label1" VerticalAlignment="Top" />
+        <Label Content="Key" Grid.Column="1" Height="28" HorizontalAlignment="Left" Margin="0,62,0,0" Name="label2" VerticalAlignment="Top" />
+        <TextBox Grid.Column="1" Height="23" Margin="35,64,0,0" Name="keyString" VerticalAlignment="Top" Text="fb2792b935fb9cd183341cb24539376556f8b7b8f887eb90fcebaa0daf2d6d9c"/>
+        <TextBox Margin="12,143,0,12" Name="logText" IsReadOnly="True" IsReadOnlyCaretVisible="True" Grid.ColumnSpan="2" Grid.RowSpan="2">Enter IV and Key, then select the restore ramdisk file!</TextBox>
+        <Button Content="Select ramdisk" Grid.Column="1" Height="23" HorizontalAlignment="Left" Margin="0,93,0,0" Name="button1" VerticalAlignment="Top" Width="105" Click="button1_Click" />
+        <TextBox Grid.Column="1" Height="23" Margin="111,93,0,0" Name="selectedFile" VerticalAlignment="Top" />
+    </Grid>
+</Window>
