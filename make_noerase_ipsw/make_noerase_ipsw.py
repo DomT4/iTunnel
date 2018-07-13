@@ -5,6 +5,7 @@ import tempfile
 import shutil
 import plistlib
 import traceback
+import argparse
 
 sys.tracebacklimit = 0
 assert sys.version_info >= (2, 7), "This script only supports Python 2.7"
@@ -106,11 +107,13 @@ def ipsw_info(ipswDir):
       buildManifest["ProductVersion"], buildManifest["ProductBuildVersion"], buildManifest["SupportedProductTypes"]))
 
 def main():
-  if len(sys.argv) <= 1:
-    print("Usage: %s <ipsw file>" % sys.argv[0])
-    return
+  parser = argparse.ArgumentParser()
+  # parser.add_argument('--modern', action="store_true", help="Set this if the IPSW is for iOS 11", default=False)
+  parser.add_argument('--ipsw', action="store", help="The path to your IPSW file")
+  global args
+  args = parser.parse_args()
 
-  origIpsw = sys.argv[1]
+  origIpsw = args.ipsw
 
   print("Original IPSW file: %s" % origIpsw)
   if not zipfile.is_zipfile(origIpsw):
