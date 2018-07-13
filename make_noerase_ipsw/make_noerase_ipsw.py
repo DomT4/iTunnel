@@ -26,26 +26,30 @@ def fix_build_manifest(ipswDir):
     return
 
   buildManifest = plistlib.readPlist(buildManifestPlist)
-
   buildIdentities = buildManifest["BuildIdentities"]
 
-  assert len(buildIdentities) == 2
+  assert len(buildIdentities) % 2 == 0
 
-  restoreIndex = -1
-  updateIndex = -1
+  restoreIndex = []
+  updateIndex = []
 
   for i in range(len(buildIdentities)):
     biInfo = buildIdentities[i]["Info"]
-    print("Build identity %i: %s" % (i, biInfo["RestoreBehavior"]))
+    # print("Build identity %i: %s" % (i, biInfo["RestoreBehavior"]))
     if biInfo["RestoreBehavior"] == "Erase":
-      restoreIndex = i
+        restoreIndex.append(i)
     elif biInfo["RestoreBehavior"] == "Update":
-      updateIndex = i
+        updateIndex.append(i)
 
-    assert restoreIndex + updateIndex == 1
+  assert (len(restoreIndex) + len(updateIndex) == len(buildIdentities))
 
-    buildIdentities.pop(restoreIndex)
-    updateBiInfo = buildIdentities[0]["Info"]
+  restoreIndex.reverse()
+
+  for restoreindex in restoreIndex:
+    buildIdentities.pop(restoreindex)
+
+  for k in range(len(buildIdentities)):
+    updateBiInfo = buildIdentities[k]["Info"]
 
     assert "Update" == updateBiInfo["RestoreBehavior"]
     updateBiInfo["RestoreBehavior"] = "Erase"
@@ -53,10 +57,8 @@ def fix_build_manifest(ipswDir):
     assert "UpdateRamDisk" == updateBiInfo["VariantContents"]["RestoreRamDisk"]
     updateBiInfo["VariantContents"]["RestoreRamDisk"] = "CustomerRamDisk"
 
-    plistlib.writePlist(buildManifest, buildManifestPlist)
-
-    print("Written BuildManifest.plist")
-
+  plistlib.writePlist(buildManifest, buildManifestPlist)
+  print("Written BuildManifest.plist")
 
 def make_upgrade_only(ipswDir):
   restorePlist = os.path.join(ipswDir, "Restore.plist")
@@ -90,6 +92,15 @@ def has_build_manifest(ipsw):
   except KeyError:
     return False
 
+def ipsw_info(ipswDir):
+  buildManifestPlist = os.path.join(ipswDir, "BuildManifest.plist")
+  if not os.path.exists(buildManifestPlist):
+    return
+
+  buildManifest = plistlib.readPlist(buildManifestPlist)
+  print("ProductVersion: %s, ProductBuildVersion: %s, SupportedProductTypes: %s" % (
+      buildManifest["ProductVersion"], buildManifest["ProductBuildVersion"], buildManifest["SupportedProductTypes"]))
+
 def main():
   if len(sys.argv) <= 1:
     print("Usage: %s <ipsw file>" % sys.argv[0])
@@ -116,12 +127,13 @@ def main():
   ipsw.extractall(tempDir)
   ipsw.close()
 
+  ipsw_info(tempDir)
   make_upgrade_only(tempDir)
 
   newPath = os.path.split(origIpsw)
   newIpsw = os.path.join(newPath[0], "UPG_" + newPath[1])
   print("Packing upgrade-only IPSW to %s ..." % newIpsw)
-  ipswUp = zipfile.ZipFile(newIpsw, mode='w')
+  ipswUp = zipfile.ZipFile(newIpsw, mode='w', allowZip64=True)
   recursive_zip(ipswUp, tempDir)
   ipswUp.close()
 
@@ -136,6 +148,6 @@ if __name__ == '__main__':
     blah = raw_input()
   except:
     traceback.print_exc()
-    print >>sys.stderr
-    print >>sys.stderr, "Press Enter to exit."
+    print >> sys.stderr
+    print >> sys.stderr, "Press Enter to exit."
     blah = raw_input()
