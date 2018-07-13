@@ -6,6 +6,10 @@ import shutil
 import plistlib
 import traceback
 
+sys.tracebacklimit = 0
+assert sys.version_info >= (2, 7), "This script only supports Python 2.7"
+sys.tracebacklimit = 1000 # The default.
+
 def recursive_zip(zipf, basePath, zipPath=""):
   for fname in os.listdir(os.path.join(basePath, zipPath)):
     izPath = os.path.join(zipPath, fname)
