@@ -47,9 +47,9 @@ def fix_build_manifest(ipswDir):
     biInfo = buildIdentities[i]["Info"]
     # print("Build identity %i: %s" % (i, biInfo["RestoreBehavior"]))
     if biInfo["RestoreBehavior"] == "Erase":
-        restoreIndex.append(i)
+      restoreIndex.append(i)
     elif biInfo["RestoreBehavior"] == "Update":
-        updateIndex.append(i)
+      updateIndex.append(i)
 
   assert (len(restoreIndex) + len(updateIndex) == len(buildIdentities))
 
@@ -126,7 +126,7 @@ def main():
     return
   try:
     ipsw = zipfile.ZipFile(origIpsw)
-  except:
+  except StandardError:
     print("Failed to open", origIpsw)
     return
 
@@ -149,15 +149,14 @@ def main():
   recursive_zip(ipswUp, tempDir)
   ipswUp.close()
 
-  print("Cleaning up")
+  print("Cleaning up...")
   shutil.rmtree(tempDir)
 
 if __name__ == '__main__':
   try:
     main()
-    print
-    print("Press Enter to exit.")
-  except:
+    print("")
+  except StandardError:
     traceback.print_exc()
     sys.stderr.write("")
-    sys.stderr.write(""), "Press Enter to exit."
+    sys.exit()
