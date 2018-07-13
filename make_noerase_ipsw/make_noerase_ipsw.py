@@ -157,9 +157,7 @@ if __name__ == '__main__':
     main()
     print
     print("Press Enter to exit.")
-    blah = raw_input()
   except:
     traceback.print_exc()
-    print >> sys.stderr
-    print >> sys.stderr, "Press Enter to exit."
-    blah = raw_input()
+    sys.stderr.write("")
+    sys.stderr.write(""), "Press Enter to exit."
